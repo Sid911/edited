@@ -1,0 +1,52 @@
+[debug] [2018-03-06T15:41:06.340Z] ----------------------------------------------------------------------
+[debug] [2018-03-06T15:41:06.346Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\JKS\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-03-06T15:41:06.347Z] CLI Version:   3.17.4
+[debug] [2018-03-06T15:41:06.347Z] Platform:      win32
+[debug] [2018-03-06T15:41:06.347Z] Node Version:  v7.10.0
+[debug] [2018-03-06T15:41:06.348Z] Time:          Tue Mar 06 2018 21:11:06 GMT+0530 (India Standard Time)
+[debug] [2018-03-06T15:41:06.348Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-06T15:41:06.376Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-03-06T15:41:06.378Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\JKS\Documents\webapps\template
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-03-06T15:41:19.389Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-06T15:41:19.389Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/GLLGblkrqiQbwL9nRYV2cODhFVzI9q0-NAI-VNN0xVw',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Mar 06 2018 21:11:19 GMT+0530 (India Standard Time)
+[debug] [2018-03-06T15:41:20.065Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-06T15:41:20.142Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Tue Mar 06 2018 21:11:20 GMT+0530 (India Standard Time)
+[debug] [2018-03-06T15:41:22.644Z] <<< HTTP RESPONSE 200
+[info] i  .firebaserc already has a default project, skipping
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 

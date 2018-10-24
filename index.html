@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Projection by SID</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-messaging.js"></script>
+	<script>
+	// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyA0eexUuO2Vc-z_hQJuYkxqx_I3ECvqKow",
+			authDomain: "web-tests-581af.firebaseapp.com",
+			databaseURL: "https://web-tests-581af.firebaseio.com",
+			projectId: "web-tests-581af",
+			storageBucket: "web-tests-581af.appspot.com",
+			messagingSenderId: "886608284143"
+		};
+			firebase.initializeApp(config);
+	</script>
+
+			<script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+			<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"><strong>Firestore</strong> by SID</a>
+					<!--<button class="button" onClick="signInFirebase()">Sign In</button>-->
+				</div>
+
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<header>
+					  <h1>Firebase Test</h1>
+					</header>
+
+					<div class="flex ">
+
+						<div>
+							<h3>Enter Your Name</h3>
+							<br>
+						  <input name="name" type="text" placeholder="Your name" id="text_name"/>
+					  </div>
+
+						<div>
+							<h3>Class...</h3>
+							<br>
+						  <input name="name" type="text" placeholder="Class" id="text_class"/>
+					  </div>
+
+						<div>
+							<h3>Section</h3>
+							<br>
+						  <input name="name" type="text" placeholder="Section" id="text_section"/>
+					  </div>
+					</div>
+
+					<footer><button class="button" onClick="storeData()">SUBMIT</button></footer>
+				</div>
+			</section>
+		
+		<!-- Three -->
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h3>Get in touch</h3>
+
+					<form action="#" method="post">
+
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input name="name" id="name" type="text" placeholder="Name">
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="Send Message" class="button alt" type="submit" onClick="writeFeedback()"></li>
+						</ul>
+					</form>
+				</div>
+			</footer>
+	</body>
+</html>
